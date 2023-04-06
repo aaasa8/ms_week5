@@ -1,5 +1,7 @@
 package com.example.week5
 
+import android.view.View
+
 class MyCustomView : View {
 	constructor(context: Context?) : super(context)
 	constructor(context: Context?, attrSet: AttributeSet?): super(context, attrSet)
