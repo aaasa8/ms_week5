@@ -6,6 +6,18 @@ import android.os.Bundle
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
+				val myView = MyView(this)
+				setContentView(myView)
     }
+
+		class MyView : View(context) { //ctrl + 5
+			override fun onDraw(canvas: Canvas?) {
+				super.onDraw(canvas)
+				canvas?.drawColor(Color.LTGRAY)
+				val paint = Paint()
+				paint.setColor(Color.BLUE)
+				canvas?.drawCircle(200.toFloat(), 200.toFloat(), 100.toFloat(), paint)
+			}
+		}
 }
