@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 				}
     }
 
-		class MyView : View(context) { //ctrl + 5
+		/*class MyView : View(context) { //ctrl + 5
 			override fun onDraw(canvas: Canvas?) {
 				super.onDraw(canvas)
 				canvas?.drawColor(Color.LTGRAY)
@@ -29,5 +29,5 @@ class MainActivity : AppCompatActivity() {
 				paint.setColor(Color.BLUE)
 				canvas?.drawCircle(200.toFloat(), 200.toFloat(), 100.toFloat(), paint)
 			}
-		}
+		}*/
 }
