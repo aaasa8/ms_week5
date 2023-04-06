@@ -7,8 +7,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
-				val myView = MyView(this)
-				setContentView(myView)
+				//val myView = MyView(this)
+				//setContentView(myView)
+
+				val button = findViewById<Button>(R.id.button)
+
+				button.setOnClickListener {
+					
+				}
     }
 
 		class MyView : View(context) { //ctrl + 5
