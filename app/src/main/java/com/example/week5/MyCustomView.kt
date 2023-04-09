@@ -1,19 +1,11 @@
 package com.example.week5
 
 import android.view.View
-import java.util.Random
 
 class MyCustomView : View {
 
-	var color : Integer = Color.RED	
+	var color : Integer = Color.CYAN	
 	
-	val random = Random()
-
-	val x = random.nextInt(500)
-	val y = random.nextInt(500)
-
-	val r = (random.nextInt(2) + 1) * 100
-
 	constructor(context: Context?) : super(context)
 	constructor(context: Context?, attrs: AttributeSet?): super(context, attrs)
 	constructor(context: Context?, attrs: AttributeSet?, defStyleSet: Int)
@@ -21,10 +13,10 @@ class MyCustomView : View {
 
 	override fun onDraw(canvas: Canvas?) {
 			super.onDraw(canvas)
-			canvas?.drawColor(Color.LTGRAY)
+			canvas?.drawColor(Color.YELLOW)
 			val paint = Paint()
-			paint.setColor(color)
-			canvas?.drawCircle(x.toFloat(), y.toFloat(), r.toFloat(), paint)	
+			//paint.setColor(color)
+			canvas?.drawCircle(100.toFloat(), 100.toFloat(), r.toFloat(), paint)	
 	}
 	
 }
